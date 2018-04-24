@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 @RequestMapping("/hello")
 public class HelloController {
+
     @ResponseBody
     @RequestMapping(value = "/hello", method = {RequestMethod.GET})
     public String hello() {
