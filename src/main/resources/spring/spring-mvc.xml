@@ -80,4 +80,27 @@
         </mvc:message-converters>
     </mvc:annotation-driven>
 
+    <mvc:interceptors>
+
+        <mvc:interceptor>
+            <mvc:mapping path="/**"/>
+            <ref bean="CORSInterceptor"/>
+        </mvc:interceptor>
+
+        <!-- 设置允许API文档跨域访问 -->
+        <mvc:interceptor>
+            <mvc:mapping path="/v2/api-docs/**"/>
+            <ref bean="CORSInterceptor"/>
+        </mvc:interceptor>
+    </mvc:interceptors>
+
+    <!--<mvc:resources mapping="/swagger/**" location="/swagger/"/>-->
+
+    <bean id="CORSInterceptor" class="com.chaoyue.test.swagger.CORSInterceptor">
+        <!-- <property name = "apiDocServer" value=""/> -->
+    </bean>
+
+    <context:component-scan base-package="com.chaoyue.test.swagger">
+    </context:component-scan>
+
 </beans>
