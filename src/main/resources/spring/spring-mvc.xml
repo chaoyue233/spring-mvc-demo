@@ -92,6 +92,11 @@
             <mvc:mapping path="/v2/api-docs/**"/>
             <ref bean="CORSInterceptor"/>
         </mvc:interceptor>
+
+        <mvc:interceptor>
+            <mvc:mapping path="/**"/>
+            <bean class="com.chaoyue.test.interceptor.CatInterceptor"/>
+        </mvc:interceptor>
     </mvc:interceptors>
 
     <!--<mvc:resources mapping="/swagger/**" location="/swagger/"/>-->
