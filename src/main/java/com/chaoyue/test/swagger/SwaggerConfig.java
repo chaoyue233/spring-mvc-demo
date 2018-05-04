@@ -36,8 +36,8 @@ public class SwaggerConfig extends WebMvcConfigurerAdapter {
 
     private springfox.documentation.service.ApiInfo demoApiInfo() {
         return new springfox.documentation.service.ApiInfo(
-                "容易 小程序 API Documentation",
-                "容易 小程序 API 文档说明",
+                "容易 定制平台模板作品 API Documentation",
+                "容易 定制平台模板作品 API 文档说明",
                 "1.0.0",
                 "", // termsOfService
                 new Contact("容易新零售组", "", "wuchaoyue@rongyi.com"),
