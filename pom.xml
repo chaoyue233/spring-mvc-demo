@@ -173,7 +173,7 @@
     </dependencies>
 
     <build>
-        <finalName>miniprog-manager-gateway</finalName>
+        <finalName>chaoyue</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
